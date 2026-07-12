@@ -1,0 +1,51 @@
+.projects-hero {
+  background: linear-gradient(135deg, #1a1a2e 0%, #2d1b69 50%, #4a2c8a 100%);
+  padding: 140px 0 70px;
+  text-align: center;
+  color: var(--light);
+  position: relative;
+  overflow: hidden;
+}
+
+.projects-hero h1 { font-weight: 800; font-size: 3.5rem; }
+.projects-hero h1 span { color: var(--secondary); }
+.projects-hero p { font-size: 1.2rem; opacity: 0.9; max-width: 550px; margin: 0 auto; }
+
+.projects-grid { background: var(--gray); }
+
+.project-card {
+  background: var(--light); border-radius: 24px; overflow: hidden;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.06); transition: var(--transition);
+  border: 1px solid rgba(0, 0, 0, 0.04); height: 100%;
+}
+.project-card:hover { transform: translateY(-12px); box-shadow: var(--shadow); border-color: transparent; }
+.project-card .project-img { height: 220px; background-size: cover; background-position: center; position: relative; }
+.project-card .project-img .project-tag {
+  position: absolute; top: 16px; right: 16px; background: var(--secondary);
+  color: var(--dark); font-weight: 600; font-size: 0.75rem; padding: 6px 16px; border-radius: 50px;
+}
+.project-card .project-body { padding: 24px 26px 28px; }
+.project-card .project-body .project-category { font-size: 0.8rem; font-weight: 600; color: var(--primary); text-transform: uppercase; letter-spacing: 1px; }
+.project-card .project-body h5 { font-weight: 700; color: var(--dark); margin: 8px 0 10px; font-size: 1.2rem; }
+.project-card .project-body p { color: #6c757d; font-size: 0.95rem; line-height: 1.7; }
+.project-card .project-body .project-meta { display: flex; justify-content: space-between; align-items: center; padding-top: 14px; border-top: 1px solid #eee; margin-top: 12px; }
+.project-card .project-body .project-meta span { font-size: 0.85rem; color: #6c757d; }
+.project-card .project-body .project-meta span i { color: var(--primary); margin-right: 6px; }
+.project-card .project-body .btn-project {
+  background: var(--primary); color: var(--light); border: none; padding: 8px 24px;
+  border-radius: 50px; font-weight: 500; font-size: 0.85rem; transition: var(--transition);
+}
+.project-card .project-body .btn-project:hover { background: var(--secondary); color: var(--dark); transform: scale(1.05); }
+
+.projects-page .section-title { font-size: 2.8rem; }
+
+@media (max-width: 991.98px) {
+  .projects-hero h1 { font-size: 2.8rem; }
+}
+@media (max-width: 767.98px) {
+  .projects-hero { padding: 110px 0 50px; }
+  .projects-hero h1 { font-size: 2.2rem; }
+}
+@media (max-width: 575.98px) {
+  .projects-hero h1 { font-size: 1.8rem; }
+}
